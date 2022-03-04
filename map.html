@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="/jquery.maphilight.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+  .center { 
+      display:grid;  
+      place-items:center;  
+      position:fixed;
+      top:0;  
+      left:0;
+      -webkit-overflow-scrolling: touch;
+  }
+    html {
+      background: #879551;
+    }
+
+  </style>
+  </head>
+
+
+<body>
+<div id = 'parent' width = '100%' height = '100%'>
+<div id = 'center' class="center">
+
+<!-- Image -->
+<img src="/unknown1.jpg" id="map" alt="Woodland Cemetery" usemap="#map" width="1632px" height="866px"></div></div>
+<map name="map">
+    <area target="" alt="O" title="O" href="" coords="1354,114,1347,203,1317,271,1209,143,1292,82" shape="poly">
+    <area target="" alt="P" title="P" href="" coords="1202,142,1314,270,1254,378,1122,291,1091,203,1147,170" shape="poly">
+    <area target="" alt="Q" title="Q" href="" coords="1122,297,1251,385,1261,478,1243,543,1223,602,1184,641,1157,656,1078,579,1115,532,1122,483,1111,431,1085,383,1115,347" shape="poly">
+    <area target="" alt="N" title="N" href="" coords="1080,205,1115,286,1112,346,1083,381,1030,347,984,344,933,354,897,372,826,307,953,256,1010,234" shape="poly">
+    <area target="" alt="M" title="M" href="" coords="759,278,811,307,919,266,1006,230,1065,207,1145,170,1196,139,1153,112,1026,168,918,206,858,208,795,201" shape="poly">
+    <area target="" alt="V" title="V" href="" coords="1026,438,1083,389,1114,445,1117,490,1108,526,1091,550,1076,575,1027,519,1039,477,1034,458" shape="poly">
+    <area target="" alt="R" title="R" href="" coords="883,573,798,627,896,693,995,729,1081,736,1134,710,1151,670,1150,659,1094,601,1072,586,1030,607,981,608,933,602" shape="poly">
+    <area target="" alt="S" title="S" href="" coords="944,517,887,568,935,598,978,602,1020,601,1055,589,1070,584,1026,524,983,529" shape="poly">
+    <area target="" alt="W" title="W" href="" coords="952,438,970,432,1003,432,1019,444,1029,464,1029,480,1023,503,1014,514,998,519,984,519,968,516,955,510,944,504,939,496,939,480,939,467,944,450" shape="poly">
+    <area target="" alt="T" title="T" href="" coords="893,379,945,435,938,460,933,473,932,496,936,513,925,526,903,543,884,558,861,516,854,477,864,421" shape="poly">
+    <area target="" alt="U" title="U" href="" coords="897,375,916,366,965,353,993,347,1017,349,1043,359,1069,375,1079,382,1066,398,1049,409,1029,425,1023,437,995,425,980,425,952,432" shape="poly">
+    <area target="" alt="L" title="L" href="" coords="749,284,834,321,857,343,889,373,860,411,854,434,850,463,854,509,864,536,880,565,853,586,752,481,691,415" shape="poly">
+    <area target="" alt="K" title="K" href="" coords="690,425,765,503,825,569,843,588,792,621,772,633,739,607,680,535,645,497" shape="poly">
+    <area target="" alt="J" title="J" href="" coords="637,509,691,561,727,599,755,628,699,695,644,656,595,595,589,565,611,536,625,519" shape="poly">
+    <area target="" alt="F" title="F" href="" coords="478,173,677,389,709,363,726,317,743,277,502,161" shape="poly">
+   <area target="" alt="1" title="1" href="" coords="483,301,495,313,485,323,480,311" shape="poly">
+    <area target="" alt="2" title="2" href="" coords="638,466,647,463,654,473,646,478,637,478" shape="poly">
+    <area target="" alt="3" title="3" href="" coords="669,417,680,411,679,428,667,423,669,414" shape="poly">
+    <area target="" alt="4" title="4" href="" coords="537,257,527,260,537,273,547,264" shape="poly">
+    <area target="" alt="H" title="H" href="" coords="462,313,632,497,606,536,570,552,484,491,429,441,380,372" shape="poly">
+    <area target="" alt="C" title="C" href="" coords="531,241,441,138,331,162,464,303" shape="poly">
+    <area target="" alt="B" title="B" href="" coords="322,169,458,308,373,369,234,212,275,189" shape="poly">
+    <area target="" alt="E" title="E" href="" coords="748,272,772,202,471,86,468,143,603,205" shape="poly">
+    <area target="" alt="D" title="D" href="" coords="200,143,443,86,449,133,329,156,230,210" shape="poly">
+</map>
+<script>    
+  /*const zoomElement = document.querySelector(".center");
+  var zoom = 1;
+  const ZOOM_SPEED = 0.1;
+  
+  document.querySelector("body").addEventListener("mousewheel", wheelHandler, false);
+  document.querySelector("body").addEventListener("DOMMouseScroll", wheelHandler, false);
+  
+  function wheelHandler(e) {  
+      if(e.deltaY > 0 && zoom > 1){    
+        $("center").css(`scale(${zoom -= ZOOM_SPEED})`);
+      }else if (zoom != 1){    
+        $("center").css(`scale(${zoom += ZOOM_SPEED})`);
+      }
+  }*/
+  /*$(document).on("mouse-wheel", (evt) => {
+    evt.stopPropagation();
+  });*/
+
+  $('.center').draggable({
+    scroll: false
+  });
+  
+  $('#map').maphilight();
+  document.querySelector("body").addEventListener("mousemove", getPoint, false);
+  
+function getPoint() {
+  if((document.getElementById("center").offsetTop)>0){
+    $("#center").css({"top": "0px"});
+  }
+  if((document.getElementById("center").offsetLeft)>0){
+    $("#center").css({"left": "0px"});
+  } 
+  if(window.innerWidth-document.getElementById('center').offsetWidth>0) {
+    $("#center").css({"left": window.innerWidth-1632});
+  }
+  if((document.getElementById("center").offsetTop + document.getElementById("center").offsetHeight - window.innerHeight)<0){
+    $("#center").css({"top": window.innerHeight-866});
+  }
+  console.log(jQuery(window).width());
+}
+
+</script>
+</body>
+</html>
